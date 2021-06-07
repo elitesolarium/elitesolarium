@@ -1,0 +1,545 @@
+/* Namn pÃ¥ kund/fÃ¶retag */
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,700');
+
+/* ==========================================================================
+Generellt 
+========================================================================== */
+body {
+}
+
+body.isMobile .body-background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	/*background-image: url('images/background.jpg');*/
+	background-position: center center;
+}
+
+.LayoutPage .section-block,
+.SubPage .LayoutPage .section-block {
+    padding: 60px 20px;
+}
+
+.LayoutPage .section-wrapper {
+/* 	background-color: transparent; */
+}
+
+.display-none {
+	display: none;
+}
+
+.btn {
+	max-width: 170px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+   	background-color: #202020;
+	border:3px solid #202020;
+   	color: #fff;	
+    border-radius: 12px;
+    text-align: center;
+    text-transform: none;
+    font-weight:600;
+/*  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.15); */
+     -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+	background-color: transparent;
+	color: #ffffff;
+	border:3px solid #fff;
+	text-decoration: none;
+}
+
+/* AnvÃ¤nd "btn btn-center" fÃ¶r att centrera knappen */
+.btn-center {
+	margin:0 auto;
+	text-align: center;
+	display: block;
+	width:200px;
+}
+
+.btn-readmore, .btn-readmore:hover {
+	color:#fff;
+	font-weight: bold;
+}
+
+.gray .section-block {
+	background-color: #f8f8f8;
+}
+
+
+.section-wrapper #accordion-nav a {
+    display: block;
+    font-size: 16px;
+    border-right: none;
+}
+.section-wrapper #accordion-nav a.active {
+    color: white;
+    background-color: #8bc34a;
+}
+
+
+/* ==========================================================================
+Text och typsnitt
+========================================================================== */
+p, a {
+	line-height: 1.6em;
+	font-size: 16px;
+	color: #333;
+	font-family: "Fira Sans", sans-serif;
+	font-weight: 300; 
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fira Sans', sans-serif;
+	letter-spacing: 1px;
+	color: #222;
+	font-weight: 700;
+	text-transform: unset;
+}
+
+h1, h2 {
+	font-size: 40px;  
+	padding-bottom: 35px;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+/* lilla "abc"-blocket */
+.smalltext-type {
+	max-width: 600px;
+}
+/* stora "ABC"-blocket */
+.normaltext-type {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+Header / Navigation
+========================================================================== */
+header {
+	background-color: #fff;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+header .header-logo {
+	width: 200px;
+	padding: 5px 0;
+}
+
+nav.mainmenu {
+	text-align: right;	
+}
+
+nav.mainmenu a {
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #444;
+	text-transform: none;
+	padding: 0 10px;
+}
+
+nav.mainmenu li:hover, 
+nav.mainmenu li.active {
+	background-color: #96b000;
+}
+
+nav.mainmenu li:hover a, 
+nav.mainmenu li.active a {
+	color: #fff;
+}  
+
+
+/* ==========================================================================
+Top-section
+========================================================================== */
+.top-section {
+	height: 100%;
+}
+
+.page-title-wrap {
+	background-color: transparent;
+	top:50%;
+	left:50%;
+	width:100%;
+	max-width: 700px;	
+}
+.page-title-wrap h1 {
+	font-size: 70px;
+	font-weight: 700;
+	color:#fff;
+	padding:0;
+	line-height: 1.2em;
+	text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.23);
+}
+/* Div fÃ¶r texten, fÃ¶r att fÃ¥ mellanrum till cta-knapp */
+#usp { margin-bottom: 25px;}
+
+/* #usp-first { font-size: 70px; } */
+#usp-second { font-size: 65px; }
+
+
+/* ==========================================================================
+Startsida
+========================================================================== */
+   
+/* Om oss
+========================================================================== */
+#about { 
+	background: #96b000; /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(148,184,63,0.66) 0%, rgba(149,177,0,1) 54.97%, rgba(120,168,61,0.89) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(148,184,63,0.66) 0%, rgba(149,177,0,1) 54.97%, rgba(120,168,61,0.89) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(148,184,63,0.66) 0%, rgba(149,177,0,1) 54.97%, rgba(120,168,61,0.89) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#about h1, #about h2, #about p { color: #fff; }
+#about p { padding-bottom: 30px; }
+
+/* TjÃ¤nster
+========================================================================== */
+#projects { background-color: #f2f2f2; }
+.projects .project-thumb-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    width: 31%;
+    height: 300px;
+    max-width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 0px;
+    box-sizing: border-box;
+     margin: 1%;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.3);
+}
+.projects .project-thumb-wrapper .project-thumb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 4;
+    padding: 40px 20px;
+    min-height: 140px;
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+    -webkit-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.projects .project-thumb-wrapper:hover .project-thumb {
+    background-color: rgba(0, 0, 0, 0.79);
+    -webkit-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
+}
+
+.projects .project-thumb h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 13px;
+    padding:0;
+    text-shadow: none;
+   	text-align: center;
+}
+.projects .project-thumb p {
+	font-size:14px;
+	text-align: center;
+}
+
+.projects .project-thumb-wrapper .project-link {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 0px;
+    padding: 21px 10px;
+    margin: 0;
+    z-index: 5;
+    color: white;
+    background-color: transparent;
+    border-top:1px solid rgba(255, 255, 255, 0.64);
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* Aktuellt
+========================================================================== */
+/*
+.aktuellt-card {
+    background: #fff;
+    text-align: center;
+    height: auto;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.15);
+}
+.aktuellt-card-content {
+	box-sizing: border-box;
+	padding: 20px;
+	font-size: 16px;
+}
+.aktuellt-card h3 {
+	font-size: 25px;
+}
+
+.aktuellt-card h4 { 
+	font-weight: 100;
+    font-size: 16px;
+}
+*/
+
+#news .col-block .col-wrapper {
+    background: #fff;
+    text-align: center;
+    height: auto;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.15);
+}
+
+#news .col-0 .col-wrapper {
+	background: transparent;
+	box-shadow: none;
+}
+
+#news p { font-size: 16px; font-weight: 100; }
+#news h3 { font-size: 25px; padding-top: 20px; }
+
+#news .col-block .smalltext-type { padding: 0 20px 20px 20px; }
+#news .col-0 .smalltext-type { padding: 0; }
+
+/* Kontakt
+========================================================================== */
+#contact {	
+	background: #96b000; /* Old browsers */
+	background: -moz-linear-gradient(45deg, rgba(148,184,63,0.66) 0%, rgba(149,177,0,1) 54.97%, rgba(120,168,61,0.89) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, rgba(148,184,63,0.66) 0%, rgba(149,177,0,1) 54.97%, rgba(120,168,61,0.89) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, rgba(148,184,63,0.66) 0%, rgba(149,177,0,1) 54.97%, rgba(120,168,61,0.89) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#contact h1 {
+	color:#fff;
+}
+
+#contact .section-block .col-0 {
+	 width:80%;
+	 margin:0 auto;
+}
+#contact .Contact .ContactForm input.text,
+.LayoutPage #contact .Contact .ContactForm textarea.textmessage {
+    border: none !important;
+}
+.LayoutPage #contact .Contact .ContactForm textarea.textmessage {
+    height: 190px;
+}
+.Contact .ContactForm div.ContactFormMessage p,
+.Contact .ContactForm .ContactFormEmail p,
+.Contact .ContactForm .ContactFormField p,
+.Contact .ContactForm .ContactFormName p {
+	margin-top: 10px;
+	color: #fff;
+	font-size: 17px;
+}
+#contact .Contact .ContactForm input.ContactSubmit,
+#contact .Contact .ContactForm input.ContactSubmit:hover {
+    color: #fff;
+    background-color: #252525;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 0px auto;
+    margin-top:20px;
+    display: block;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+#contact .Contact .ContactForm input.ContactSubmit:hover {
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.LayoutPage #contact .Contact .ContactForm input.text, 
+.LayoutPage #contact .Contact .ContactForm textarea.textmessage {
+    border-radius: 7px;
+}
+
+/* ==========================================================================
+Undersidor - gÃ¤ller alla undersidor 
+========================================================================== */
+.SubPage .top-section {
+/* 	height: 33%; */
+}
+
+
+body.SubPage,
+body.SubPage.isMobile .body-background {
+/*
+	background: #009097 url('/files/topsection-bild.jpg') no-repeat center top;
+	background-size: cover;
+*/
+}
+
+/* Namn pÃ¥ undersida - specifikt fÃ¶r enskild undersida
+========================================================================== */
+.startsida .top-section { height: 100%; }
+
+
+
+/* ==========================================================================
+Footer
+========================================================================== */
+.footer {
+	background-color: #252525;
+}
+
+.footer .container {
+	max-width: 980px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 30px 0px;
+}
+
+.footer h5 {
+	 text-align: center;
+	 margin-bottom: 10px;
+	 color: #fff; 
+	 font-size: 20px;
+	 font-weight: 600;
+}
+.footer p,
+.footer a {
+	font-size: 17px;
+	text-align: center;
+	line-height: 1.4em;
+	color: #f6f6f6;
+	text-transform: unset;
+}
+
+.footer .container .fab {
+	font-size:30px; 
+	padding:5px;
+	margin-top: 15px;
+	text-decoration: none;
+}
+.footer .container .fab:hover {
+	color: #96b000;
+}
+
+/* ==========================================================================
+Media queries
+========================================================================== */
+@media only screen and (max-width: 1366px) {
+	
+}
+
+@media only screen and (max-width: 1024px) { 
+	.page-title-wrap {
+		top:55%;
+	}
+	.container {
+	    margin: 0 auto;
+	    max-width: none;
+	    padding: 0 0px;
+	}
+	.projects { font-size: 16px; }
+	
+	
+	.projects .project-thumb-wrapper:hover .project-thumb p {
+    	opacity: 0;
+    }
+	
+}
+
+@media only screen and (max-width: 980px) {
+	/* Hamburgarmeny â€“ Den Ã¤r default svart, men fÃ¶r att Ã¤ndra fÃ¤rg eller ikon anvÃ¤nd koden nedan.*/
+	.openmenu {
+/*
+		background: transparent url('/assets/images/white-menu.png') no-repeat center center;
+	    background-size: 250px 25px;
+	    width: 30px;
+	    height: 30px;
+	    right: 30px;
+	    top: 20px;
+*/
+	}
+	
+	nav.mainmenu {
+	 	text-align: left;
+	}
+	
+	nav.mainmenu .Padding {
+		border-top:none !important;
+	}
+	
+	nav.mainmenu li a {
+		font-size:20px;
+		border-bottom: none;
+		margin:20px 0px;
+		color:#000 !important;
+		padding-left: 40px;
+	}
+	
+	nav.mainmenu li:hover, nav.mainmenu li.active {
+    	background-color: transparent;
+	}
+	
+}
+
+@media only screen and (max-width: 768px) {
+	.projects .project-thumb-wrapper {
+		margin: 7px
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.LayoutPage .section-block, .SubPage .LayoutPage .section-block {
+	    padding: 40px 15px;
+	}
+	
+	.page-title-wrap h1 { font-size: 45px; }
+	#usp-second { font-size: 40px; }
+	
+	p { text-align: left; }
+	
+	
+	.projects { font-size: 0; }	
+	.projects .project-thumb-wrapper {
+		width:100%;
+		height:270px;
+		margin:0 auto;
+		margin-bottom: 20px;
+	}
+	.projects .project-thumb-wrapper .project-thumb {
+		padding:100px 15px;
+	}
+	.projects .project-thumb h2 {
+    	font-size: 20px;
+    }
+    
+    .aktuellt-card {
+	    margin-bottom: 15px;
+    }
+    
+    .ui-accordion .ui-accordion-header-active {
+	    background-color: #96b000;
+	}
+	
+}

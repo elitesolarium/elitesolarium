@@ -1,0 +1,28 @@
+@media (max-width: 980px) {
+	
+	nav.mainmenu li.active {
+	    background-image: none;
+	}
+	nav.mainmenu li:hover {
+    	background-image: none;
+	}
+	nav.mainmenu li.level-open{
+		background-color: #4f4f4f;
+	}
+	nav.mainmenu li:hover {
+	    background-color: #4f4f4f;
+	}	
+	nav.mainmenu ul > li > ul > li.active {
+	    background-color: #4f4f4f;
+	    background-image: none;
+	}
+	nav.mainmenu ul > li > ul > li.level-open {
+	    background-color: #9f9f9f;
+	}
+	.openmenu{
+	    background-image: url(images/assets.png);
+	}
+	.closemenu{
+	    background-image: url(images/assets.png);
+	}
+}

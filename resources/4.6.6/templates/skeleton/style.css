@@ -1,0 +1,553 @@
+html, body, #aspnetForm {
+	height: 100%;
+	max-width: 100%;
+	overflow: visible !important;
+}
+body {
+	margin: 0;
+	background: none;
+	/*background-image: url('images/background.jpg'); */
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+	background-attachment: fixed;
+}
+
+body.isMobile {
+	background: none !important;
+}
+body.isMobile .body-background {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -10;
+	background: none;
+	/*background-image: url('images/background.jpg');*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover !important;
+}
+
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+.container{
+	margin: 0 auto;
+	max-width: 980px;
+	padding: 0 10px;
+}
+.container .menu-title {
+	display: none;
+	position: relative;
+	height: 72px;
+	max-width: 85%;
+}
+.container .menu-title span {
+    position: absolute;
+    top: 50%;
+    font-size: 19px;
+    color: #000;
+    transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+}
+.ClearBoth{
+	clear: both;
+	display: block;
+}
+
+/*******************************\
+		HEADER & MENU
+\*******************************/
+
+header {
+	background-color: #fff;
+	height: 72px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 8;
+	font-size: 0;
+}
+
+header .header-logo {
+	position: relative;
+	width: 200px;
+	height: auto;
+	float: left;
+	z-index: 9;
+	line-height: 62px;
+	padding: 5px 0;
+	box-sizing: border-box;
+}
+
+header .header-logo a {
+	display: block;
+	vertical-align: center;
+}
+header .header-logo img {
+	max-width: 100%;
+}
+
+nav.mainmenu{
+	text-align: right;
+	width: 100%;
+	font-size: 0;
+}
+nav.mainmenu ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.mainmenu ul.TemplateMenu > li {
+	line-height: 72px;
+	height: 72px;
+}
+nav.mainmenu li {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+}
+nav.mainmenu a {
+	margin: 0 10px;
+	padding: 0 10px;
+	display: inline-block;
+	line-height: normal;
+	text-transform: uppercase;
+	font-size: 13px;
+	text-decoration: none;
+}
+nav.mainmenu a:hover, nav.mainmenu a:active{
+	text-decoration: none;
+	color: inherit;
+}
+nav.mainmenu ul > li.expandable-li:hover {
+	color: white;
+}
+nav.mainmenu ul > li.expandable-li:hover > a {
+	color: white;
+}
+nav.mainmenu li:hover > ul {
+	display: block;
+}
+
+/* MENU LEVEL 2 */
+nav.mainmenu ul > li > ul {
+	line-height: 35px;
+	display: none;
+	position: absolute;
+	min-width: 100%;
+	width: 200px;
+    text-align: left;
+    padding: 10px 0 15px;
+    z-index: 10;
+}
+nav.mainmenu ul > li > ul > li{
+	display: block;
+}
+nav.mainmenu ul > li > ul > li:hover{
+	background-image: none;
+}
+nav.mainmenu ul > li > ul li:hover > a.expandable{
+	background-color: transparent;
+}
+nav.mainmenu ul > li > ul > li.expandable-li:hover > a {
+	color: #fff;
+	border-bottom: none;
+	padding-bottom: 0;
+}
+nav.mainmenu ul > li > ul > li:hover > a{
+	border-bottom: none;
+}
+nav.mainmenu ul > li > ul > li > a{
+	color: #fff;
+    padding: 3px 36px 0 20px;
+    margin: 0;
+    white-space: nowrap;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* MENU LEVEL 3 */
+nav.mainmenu ul > li > ul > li > ul {
+	display: none;
+	left: 100%;
+    top: 0;
+}
+nav.mainmenu ul > li > ul > li > ul a{
+}
+
+.dropdown-arrow {
+    background-repeat: no-repeat;
+    background-size: 1343px auto;
+    background-position: -27px -154px;
+    width: 9px;
+    height: 13px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+
+
+/*******************************\
+		TOPIMAGE & TITLE
+\*******************************/
+
+.top-section{
+    width: 100%;
+	position: relative;
+	height: 100%;
+	box-sizing: border-box;
+}
+.page-title-wrap {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 980px;
+    height: auto;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255,255,255,0.8);
+}
+.SubPage .top-section {
+	height: 33%;
+}
+
+/*******************************\
+		MAIN
+\*******************************/
+
+main{
+}
+
+.LayoutPage .section-block {
+	padding: 50px 0;
+}
+.LayoutPage .block-container {
+	margin-bottom: 0; 
+}
+.LayoutPage .section-wrapper {
+	background-color: white;
+}
+.LayoutPage .section-block-wrapper {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.Diary,
+.EmptyPage,
+.FileArea,
+.ImageGallery1,
+.ImageGallery2,
+.ImageGallery3,
+.ImageGallery,
+.Guestbook,
+.TextLayout1,
+.TextLayout2 {
+	background-color: white;
+	padding: 50px 20px;
+	max-width: 980px;
+	margin: 0 auto;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+.LayoutPage .section-block {
+    margin: 0 auto 2em;
+    max-width: 960px;
+	min-width: auto;
+}
+.LayoutPage .settings-button-wrapper,
+.LayoutPage div.section-separator {
+    margin: 0 auto 1em;
+    max-width: 960px;
+	min-width: auto;
+}
+
+.ResponsiveDesign .MainPage {
+	max-width: 700px;
+    margin: 0 auto;
+}
+
+.MainPageContainer {
+	max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.MainPageContainer .MainPage:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+*/
+/*
+main .content-container {
+	overflow: hidden;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 10px 0;
+    position: relative;
+}
+*/
+
+/**************************************\
+	    MAIN - STARTPAGE
+\**************************************/
+
+.ParagraphContainer ul,
+.NewsContainer ul,
+.text-part ul { overflow: hidden; }
+
+
+
+.ResponsiveDesign.IndexPage .MainPage { max-width: inherit; }
+.ResponsiveDesign.IndexPage .MainPage .NewsContainer,
+.ResponsiveDesign.IndexPage .MainPage .MainContainer {
+	overflow: hidden;
+    margin: 0 auto;
+    max-width: 960px;
+	min-width: auto;
+    padding: 0 10px 0;
+    position: relative;
+	width: auto;
+	float: none;
+
+}
+
+.ResponsiveDesign.IndexPage .MainPage .BodyTextContainer {
+    margin-right: 0;
+}
+
+
+/* NEWS ON THE STARTPAGE */
+
+
+.ResponsiveDesign.IndexPage .MainPage {
+	padding: 0;
+}
+
+
+.ResponsiveDesign.IndexPage .MainPage .MainContainer{	
+	padding-bottom: 50px;
+}
+.ResponsiveDesign.IndexPage .MainPage .NewsContainer{	
+	padding-top: 50px;
+}
+.ResponsiveDesign.IndexPage .NewsContainer h1{
+	text-align: center;
+}
+.ResponsiveDesign.IndexPage .NewsItem {
+    width: 26%;
+    text-align: center;
+    margin: 20px 5.5% 20px;
+    float: left;
+}
+.ResponsiveDesign.IndexPage .NewsItem:nth-of-type(3n+5){
+	margin-right: 0;
+}
+.ResponsiveDesign.IndexPage .NewsItem:nth-of-type(3n+3){
+	margin-left: 0;
+}
+.IndexPage .NewsItem h2{
+	font-size: 25px;
+	margin: 0;
+}
+.IndexPage .NewsItem .date{
+	font-size: 12px;
+	line-height: 25px;
+}
+.IndexPage .NewsItem p{
+	margin-top: 10px;
+	text-align: left;
+}
+.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ParagraphContainer,
+.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ImageContainer { padding-right: 2em; }
+
+.ResponsiveDesign .GalleryPagerLinks .GalleryPagerLinksContainer{
+	margin-top: 60px;
+}
+.ResponsiveDesign .GalleryPagerLinks .GalleryPagerLinks {
+    width: 100%;
+}
+.ResponsiveDesign .GalleryPagerLinks .PreviousPage{
+	width: 23px;
+	height: 25px;
+}
+.ResponsiveDesign .GalleryPagerLinks .PreviousPage a{
+    background-size: 500px auto;
+    background-position: -56px 0px;
+    width: 26px;
+    height: 25px;
+    display: block;
+}
+.ResponsiveDesign .GalleryPagerLinks .PreviousPage a:hover{
+	background-position: -93px -0px;
+}
+.ResponsiveDesign .GalleryPagerLinks .PageNumber{
+	text-align: center;
+    font-size: 20px;
+}
+.ResponsiveDesign .GalleryPagerLinks .PageNumber .active{
+	font-weight: 700;
+}
+.ResponsiveDesign .GalleryPagerLinks .PageNumber a{
+	margin: 0 12px;
+}
+.ResponsiveDesign .GalleryPagerLinks .PageNumber a:hover{
+	color: #e8a9b4;
+}
+.ResponsiveDesign .GalleryPagerLinks .NextPage{
+	width: 23px;
+	height: 25px;
+}
+.ResponsiveDesign .GalleryPagerLinks .NextPage a{
+    background-size: 500px auto;
+    background-position: -55px -23px;
+    width: 26px;
+    height: 25px;
+    display: block;
+}
+.ResponsiveDesign .GalleryPagerLinks .NextPage a:hover{
+	background-position: -91px -25px;
+}
+
+.ResponsiveDesign .GalleryPagerLinks .GalleryNavigator {
+	height: auto;
+}
+
+.ResponsiveDesign .MainPage .NewsContainer .GalleryPagerLinksContainer #pager-settings { display: none; }
+.ResponsiveDesign .MainPage .NewsContainer .GalleryPagerLinksContainer #pager-settings #visible-pages { width: 3px; }
+.ResponsiveDesign .MainPage .NewsContainer .GalleryPagerLinksContainer #pager-settings #rows-per-page { width: 3px; }
+
+/**************************************\
+		MAIN - ContactPAGE
+\**************************************/
+
+.Contact .BodyTextContainer{
+	padding-right: 15%;
+	margin-bottom: 50px;
+}
+
+.Diary .DiaryCommentForm span,
+.Guestbook .GuestbookForm p,
+.GalleryCommentFormControl span,
+.Contact .ContactForm .ContactFormName p, 
+.Contact .ContactForm .ContactFormEmail p,
+.Contact .ContactForm .ContactFormField p,
+.Contact .ContactForm .ContactFormMessage p{
+	margin: 0;
+    margin-top: 18px;
+}
+.Diary .DiaryCommentForm input, 
+.Diary .DiaryCommentForm textarea,
+.Guestbook .GuestbookForm input.textname, 
+.Guestbook .GuestbookForm textarea.textmessage,
+.GalleryCommentFormControl textarea,
+.Contact .ContactForm  input.text, 
+.Contact .ContactForm textarea.textmessage{
+	width: 260px;
+    padding: 0 11px;
+    border: solid 1px #dddddd !important;
+    background-color: #fff;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+.Diary .DiaryCommentForm input:focus, 
+.Diary .DiaryCommentForm textarea:focus,
+.Guestbook .GuestbookForm input:focus, 
+.Guestbook .GuestbookForm textarea:focus,
+.GalleryCommentFormControl textarea:focus,
+.Contact .ContactForm input:focus, 
+.Contact .ContactForm textarea:focus{
+	outline: none;
+}
+.Diary .DiaryCommentForm input,
+.Guestbook .GuestbookForm input,
+.Contact .ContactForm input{
+	height: 30px !important;
+}
+.Diary .DiaryCommentForm input[type="submit"],
+.Guestbook .GuestbookForm input[type="submit"],
+.GalleryCommentFormControl input[type="button"],
+.Contact .ContactForm input[type="submit"]{
+	color: #fff;
+    margin-top: 14px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: auto !important;
+	border: 0;
+}
+.Diary .DiaryCommentForm input[type="submit"]:hover,
+.Guestbook .GuestbookForm input[type="submit"]:hover,
+.GalleryCommentFormControl input[type="button"]:hover,
+.Contact .ContactForm input[type="submit"]:hover{
+    border: none;
+}
+
+.LayoutPage .form-part .ContactSentMessage {
+	border: 0 !important;
+	box-sizing: border-box;
+	max-width: 100%;
+	border-radius: 10px;
+	background-image: url('images/send.png');
+	background-size: 60px 60px;
+	background-position: 20px 10px;
+	padding: 20px 20px 10px 100px;
+}
+.LayoutPage .form-part .ContactSentMessage p {
+	color: #333;
+	font-size: inherit;
+}
+
+
+/*******************************\
+			FOOTER
+\*******************************/
+.IndexPage .bottom-section { height: 300px; }
+.footer{
+	padding: 38px 0;
+	text-align: center;
+    color: #fff;
+}
+.footer p {
+    color: #fff;
+    font-size: 17px;
+    margin: 0;
+}
+.footer a {
+	color: #fff;
+}

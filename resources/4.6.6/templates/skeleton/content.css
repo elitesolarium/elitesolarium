@@ -1,0 +1,38 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+.ClearBoth{
+	clear: both;
+	display: block;
+}
+
+a {
+	color: inherit
+}
+
+
+p, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0 0 0.5em 0; }
+
+p, a, li, td { font-size: 16px; }
+h1 { font-size: 35px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+

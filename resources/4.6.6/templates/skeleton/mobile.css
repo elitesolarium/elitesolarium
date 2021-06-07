@@ -1,0 +1,381 @@
+@media all and (max-width: 980px){
+
+	html {
+	    height: 100%;
+	    overflow: hidden;
+	}
+	body{
+	}
+    body.ResponsiveDesign  {
+        -webkit-animation: none !important;
+		padding-top: 0 !important;
+	}
+	header {
+	    padding: 0;
+	    height: 72px;
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    z-index: 100;
+	    background-color: white;
+	}
+	nav.mainmenu {
+		display: none;
+	    text-align: left;
+	    border-bottom: none;
+	    width: 300px;
+	    background-color: #fff;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 10;
+	    height: 100%;
+	    -moz-box-sizing:border-box;
+    	box-sizing:border-box;
+    	overflow-y: scroll;
+    	box-shadow: inset -10px 0 16px -10px rgba(0,0,0,0.4);
+		line-height: 30px;
+	}
+	nav.mainmenu ul.TemplateMenu > li {
+		line-height: 35px;
+		height: 35px;
+	}
+	nav.mainmenu .Padding{
+		border-top: solid 1px #000;
+		padding: 20px 0 0 0;
+		margin: 72px 0;
+	}	
+	nav.mainmenu li {
+	    display: block;
+	}
+	nav.mainmenu li.level-open{
+	}
+	nav.mainmenu ul > li > ul > li.level-open {
+	}
+	nav.mainmenu li.level-open a{
+		color: #fff;
+	}
+	nav.mainmenu li.active,
+	nav.mainmenu li:hover {
+		background-image: none;
+	}
+	nav.mainmenu li:hover > a {
+		color: #fff;
+	}
+	nav.mainmenu li:hover > .dropdown-arrow-close {
+		background-position: -91px -150px;
+	}
+	nav.mainmenu li:hover > .dropdown-arrow-open {
+		background-position: -63px -150px;
+	}
+	nav.mainmenu li.active {
+		background-image: none;
+	}
+	nav.mainmenu ul > li > ul > li.active {
+	    background-image: none;
+	}
+	nav.mainmenu li:hover > ul {
+	    display: none;
+	}
+	nav.mainmenu a {
+	    padding: 11px 0 11px 24px;
+	    margin: 0 44px 0 0;
+	    display: block;
+	}
+	nav.mainmenu ul > li.expandable-li:hover > a {
+	    border-bottom: none;
+	    padding-bottom: 11px;
+	}
+	nav.mainmenu ul > li > ul {
+	    position: relative;
+	    padding: 0;
+	}
+	/*nav.mainmenu ul > li > ul > li > .dropdown-arrow{
+		background-position: -63px -150px;
+	}*/
+	nav.mainmenu ul > li > ul > li > a {
+	    padding: 11px 0 11px 40px;
+	    margin: 0;
+	    width: 233px;
+	}
+	nav.mainmenu ul > li > ul > li.expandable-li:hover > a {
+	    padding-bottom: 11px;
+	}
+	nav.mainmenu ul > li > ul > li > ul {
+	    left: 0;
+	    top: 0;
+	    padding: 0;
+	}
+	nav.mainmenu ul > li > ul > li > ul > li > a {
+	    padding: 11px 0px 11px 64px;
+	}
+	.openmenu{
+	    background-repeat: no-repeat;
+	    background-size: 654px auto;
+    	background-position: -10px -159px;
+	    width: 29px;
+	    height: 25px;
+	    cursor: pointer;
+	    position: absolute;
+    	right: 30px;
+    	top: 24px;
+	}
+	.closemenu{
+	    display: none;
+	    background-repeat: no-repeat;
+	    background-size: 654px auto;
+	    background-position: -47px -159px;
+	    width: 24px;
+	    height: 25px;
+	    cursor: pointer;
+	    position: absolute;
+	    right: 22px;
+	    top: 22px;
+	}
+	#overlay {
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: rgba(0, 0 , 0, 0.75);
+	    z-index: 9;
+	}
+	.dropdown-arrow {
+	    background-size: 500px auto;
+	    width: 21px;
+	    height: 21px;
+	    top: 11px;
+	    right: 19px;
+	}
+	.dropdown-arrow-open{
+		background-position: -5px -150px;
+	}
+	nav.mainmenu ul > li > ul > li > .dropdown-arrow-open{
+		background-position: -62px -150px;
+	}
+	.dropdown-arrow-close{
+		background-position: -91px -150px;
+	}
+
+	/* STARTPAGE */
+	
+	.IndexPage .MainContainer .ParagraphContainer {
+	    width: 59%;
+	}
+	.IndexPage .MainContainer .ImageContainer {
+	    max-width: 35%;
+	}
+	.ResponsiveDesign.IndexPage .NewsItem {
+	    width: 59%;
+    	margin: 0 auto 55px;
+	    float: none;
+	}
+	.ResponsiveDesign.IndexPage .NewsItem:nth-of-type(3n+3) {
+	    margin: 0 auto 55px;
+	}
+	.ResponsiveDesign.IndexPage .NewsItem:nth-of-type(3n+5) {
+	    margin: 0 auto 55px;
+	}	
+	.ResponsiveDesign.IndexPage .NewsItem p,
+	.ResponsiveDesign.IndexPage .NewsItem h2 {
+	    text-align: center;
+	}
+	.ResponsiveDesign.IndexPage .NewsItem span {
+	    text-align: center;
+	    display: block;
+	}
+
+	/* CONTACTPAGE */
+	.Contact .HeadlineTextContainer {
+	    width: 59%;
+	}
+	.Contact .BodyTextContainer {
+	    width: 59%;
+	}
+	.RightColumn {
+	    width: 35%;
+	}
+	.RightColumn .ImageContainer img {
+	    width: 250px;
+	}
+	.RightColumn .ParagraphContainer {
+	    width: 250px;
+	}
+
+}
+
+@media all and (max-width: 800px){
+	
+	/*.container .menu-title { display: block; }*/
+
+	/* STARTPAGE */
+	.IndexPage .MainContainer .ImageContainer {
+	    float: none;
+	    max-width: 100%;
+	    margin: 0 0 80px;
+	}
+	.IndexPage .MainContainer .ImageContainer img{
+		display: block;
+    	margin: 0 auto;
+	}
+	.IndexPage .MainContainer .ParagraphContainer {
+	    width: 100%;
+	    float: none;
+	    margin-right: 0;
+	}
+	.IndexPage .MainContainer .ParagraphContainer h1 {
+		text-align: center;
+		margin: 0;
+		padding: 20px 0 30px;
+	}
+	.IndexPage .NewsItem {
+	    width: 100%;
+	}
+
+	/* CONTACTPAGE */
+	.Contact .HeadlineTextContainer {
+	    width: 100%;
+    	float: none;
+	}
+	.Contact .BodyTextContainer {
+	    width: 100%;
+    	float: none;
+	}
+	.RightColumn {
+	    width: 100%;
+    	float: none;
+	}
+	.RightColumn .ImageContainer img {
+	    width: auto;
+    	float: none;
+    	margin: 80px 0 0;
+	}
+	.RightColumn .ParagraphContainer {
+	    width: auto;
+	    float: none;
+	    margin: 0 0 80px;
+	}
+	.Contact .RightColumn {
+	    position: relative;
+	    right: 0px;
+	}
+
+
+}
+
+@media all and (max-width: 768px) {
+
+
+	.LayoutPage .layout-10 .col-block, 
+	.LayoutPage .layout-11 .col-block { float: left; }
+
+	.LayoutPage .layout-10 .col-0 { width: 50%; padding-left: 0;  padding-right: 1%; }
+	.LayoutPage .layout-10 .col-1 { width: 50%; padding-left: 1%; padding-right: 0; }
+	.LayoutPage .layout-10 .col-2 { width: 33.333%; padding-left:  0;      padding-right: 1.333%; clear: left; }
+	.LayoutPage .layout-10 .col-3 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+	.LayoutPage .layout-10 .col-4 { width: 33.333%; padding-left:  1.333%; padding-right: 0; }
+
+	.LayoutPage .layout-11 .col-0 { width: 33.333%; padding-left:  0;      padding-right: 1.333%; }
+	.LayoutPage .layout-11 .col-1 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+	.LayoutPage .layout-11 .col-2 { width: 33.333%; padding-left:  1.333%; padding-right: 0; }
+	.LayoutPage .layout-11 .col-3 { width: 33.333%; padding-left:  0;      padding-right: 1.333%; clear: left ;}
+	.LayoutPage .layout-11 .col-4 { width: 33.334%; padding-left:  0.667%; padding-right: 0.667%; }
+	.LayoutPage .layout-11 .col-5 { width: 33.333%; padding-left:  1.333%; padding-right: 0; }
+
+	.LayoutPage .layout-14 .col-1 { width: 50%; padding-left: 0;  padding-right: 1%; }
+	.LayoutPage .layout-14 .col-2 { width: 50%; padding-left: 1%; padding-right: 0; }
+	.LayoutPage .layout-14 .col-3 { width: 50%; padding-left: 0;  padding-right: 1%; }
+	.LayoutPage .layout-14 .col-4 { width: 50%; padding-left: 1%; padding-right: 0; }
+
+}
+
+
+@media all and (max-width: 600px){
+
+	.IndexPage .page-title-wrap, .page-title-wrap  {
+	    width: 100%;
+	}
+	
+	.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ParagraphContainer, 
+	.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer .ImageContainer { padding-right: 0; }
+	.IndexPage .MainContainer .ImageContainer { margin: 30px 0 20px; }
+	.ResponsiveDesign .MainPage .MainContainer .MainPageInlineContainer img { max-width: 100%; }
+
+	.ResponsiveDesign .Diary .DiaryList .show-blog-menu	{
+		background: url('images/menu-blog-button.png') no-repeat 5px 5px; 
+	}
+
+	.ResponsiveDesign .Diary .DiaryList ul.FirstLevel {
+		-webkit-box-shadow: 0px 1px 16px 0px #111;
+		-moz-box-shadow: 0px 1px 16px 0px #111;
+		box-shadow: 0px 1px 16px 0px #111;
+	}
+	.Diary .DiaryCommentForm input, 
+	.Diary .DiaryCommentForm textarea,
+	.Guestbook .GuestbookForm input.textname, 
+	.Guestbook .GuestbookForm textarea.textmessage,
+	.GalleryCommentFormControl textarea,
+	.Contact .ContactForm  input.text, 
+	.Contact .ContactForm textarea.textmessage{
+		width: 100%;
+		font-size: 16px;
+		-webkit-appearance: none;
+	}
+
+}
+
+@media all and (max-width: 480px){
+
+	.page-title-innerwrap h1 {
+	    font-size: 30px;
+	}
+
+	h1 { font-size: 28px; }
+	h2 { font-size: 24px; }
+	h3 { font-size: 20px; }
+	h4 { font-size: 18px; }
+	h5 { font-size: 17px; }
+	h6 { font-size: 16px; }
+	p, a, li, td { font-size: 15px; }
+
+	.LayoutPage .layout-1 .col-block,
+	.LayoutPage .layout-2 .col-block,
+	.LayoutPage .layout-3 .col-block,
+	.LayoutPage .layout-5 .col-block,
+	.LayoutPage .layout-6 .col-block,
+	.LayoutPage .layout-7 .col-block,
+	.LayoutPage .layout-9 .col-block,
+	.LayoutPage .layout-8 .col-block,
+	.LayoutPage .layout-10 .col-0,
+	.LayoutPage .layout-12 .col-block,
+	.LayoutPage .layout-13 .col-block,
+	.LayoutPage .layout-14 .col-block { 
+		float: none !important;
+		display: block !important;
+		width: auto !important;
+		padding: 0 !important;
+	}
+
+	.LayoutPage .layout-4 .col-block,
+	.LayoutPage .layout-10 .col-block, 
+	.LayoutPage .layout-11 .col-block { float: left; }
+
+	.LayoutPage .layout-4 .col-0 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-4 .col-1 { width: 50%; padding-left:  1%; padding-right: 0; }
+	.LayoutPage .layout-4 .col-2 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-4 .col-3 { width: 50%; padding-left:  1%; padding-right: 0; }
+
+	.LayoutPage .layout-10 .col-1 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-10 .col-2 { width: 50%; padding-left:  1%; padding-right: 0;  clear: none; }
+	.LayoutPage .layout-10 .col-3 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-10 .col-4 { width: 50%; padding-left:  1%; padding-right: 0; }
+
+	.LayoutPage .layout-11 .col-0 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-11 .col-1 { width: 50%; padding-left:  1%; padding-right: 0; }
+	.LayoutPage .layout-11 .col-2 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-11 .col-3 { width: 50%; padding-left:  1%; padding-right: 0;  clear: none;}
+	.LayoutPage .layout-11 .col-4 { width: 50%; padding-left:  0;  padding-right: 1%; clear: left; }
+	.LayoutPage .layout-11 .col-5 { width: 50%; padding-left:  1%; padding-right: 0; }
+	
+}
