@@ -843,63 +843,6 @@
           <div class="section-separator">
             <div class="section-sub-separator"></div>
           </div>
-
-          <div id="vip" class="section-wrapper section-634ab0d5 section-vip">
-            <div class="section-block block-container layout-1 section-8">
-              <div class="section-block-wrapper">
-                <div class="col-block col-0">
-                  <div class="col-wrapper">
-                    <div
-                      class="
-                        block-container
-                        text-part
-                        part
-                        maskable
-                        heading-type
-                      "
-                    >
-                      <div class="block-object">
-                        <h2>
-                          Bli VIP-kund nu och f&aring; 100kr att sola f&ouml;r
-                        </h2>
-                      </div>
-                    </div>
-
-                    <div
-                      class="
-                        block-container
-                        text-part
-                        part
-                        maskable
-                        normaltext-type
-                      "
-                    >
-                      <div class="block-object">
-                        <p>För att ta del av erbjudandet, kontakta oss på</p>
-                        <a
-                          href="mailto:elitesolarium@outlook.com?subject=VIP-kund&body=Hej,%0D%0DJag skulle vilja bli VIP-kund och få 100kr att sola för.%0D%0DMin anläggning är:%0D%0DMitt id för Sunapp är:%0D%0DMvh%0D%0D"
-                          >elitesolarium@outlook.com</a
-                        >
-                        <p>
-                          Det kan dr&ouml;ja upp till 4 arbetsdagar innan saldot
-                          syns p&aring; solkontot. <br />
-                          Om det inte syns efter 4 dygn s&aring; ring oss
-                          s&aring; l&ouml;ser vi det
-                          <a href="tel:+4640549090 ">040 54 90 90</a>!
-                        </p>
-                        <p>Erbjudandet g&auml;ller endast nya kunder.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div style="clear: both"></div>
-            </div>
-          </div>
-          <div class="section-separator">
-            <div class="section-sub-separator"></div>
-          </div>
-
           <div
             id="hitta-hit"
             class="section-wrapper section-c27c79fa map full-width"
@@ -911,12 +854,6 @@
                     <div class="block-container code-part part maskable">
                       <div class="block-object">
                         <div id="map" style="width: 100%; height: 450px"></div>
-                        <!-- <iframe
-                          src="https://snazzymaps.com/embed/242722"
-                          width="100%"
-                          height="450px"
-                          style="border: none"
-                        ></iframe> -->
                       </div>
                     </div>
                   </div>
@@ -1275,23 +1212,12 @@
         );
       }
 
-      // $("ul.TemplateMenu").append('<li><a href="/">Start</a></li>');
-      // $("ul.TemplateMenu").append('<li><a href="' + i + '#anlaggningar">Våra anläggningar</a></li>');
-      // $("ul.TemplateMenu").append('<li><a href="' + i + '#om-oss">Om oss</a></li>');
-      // $("ul.TemplateMenu").append('<li><a href="' + i + '#vanliga-fragor">FAQ</a></li>');
-      // $("ul.TemplateMenu").append('<li><a href="' + i + '#vip">Bli VIP-kund</a></li>');
-
-      $('<li><a href="' + i + '#vip">Bli VIP-kund</a></li>').insertAfter(
-        "ul.TemplateMenu > li:first-of-type"
-      );
       $('<li><a href="' + i + '#om-oss">Om oss</a></li>').insertAfter(
         "ul.TemplateMenu > li:first-of-type"
       );
       $(
         '<li><a href="' + i + '#anlaggningar">Våra anläggningar</a></li>'
       ).insertAfter("ul.TemplateMenu > li:first-of-type");
-
-      // 	$("ul.TemplateMenu").append('<li class="boka-item"><a href="#anlaggningar" class="btn arrow-link">Kontakta oss</a></li>');
 
       $("ul.TemplateMenu").scrollspy({
         offset: -100,
