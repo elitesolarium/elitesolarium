@@ -1156,21 +1156,21 @@ button.hero-card {
 .hero-card:nth-child(4) {
   border-radius: 0;
 }
-.hero-card:nth-child(5) {
+/* .hero-card:nth-child(5) {
   border-radius: 0 0 0 12rem;
-}
-.hero-card:nth-child(6) {
+} */
+/* .hero-card:nth-child(6) {
   border-radius: 0;
 }
 .hero-card:nth-child(7) {
   border-radius: 0 0 12rem 0;
-}
+} */
 
-.hero-card:nth-child(5),
+/* .hero-card:nth-child(5),
 .hero-card:nth-child(6),
 .hero-card:nth-child(7) {
   width: 31.333%;
-}
+} */
 
 .hero-card .hero-card-text {
   text-align: center;
